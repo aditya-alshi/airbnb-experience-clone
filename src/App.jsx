@@ -8,7 +8,7 @@ import cardData from '../data';
 export default function App(){
   const cards = cardData.map(item => {
     return <Card 
-                img = {`/public/${item.coverImg}`}
+                img = {`./public/${item.coverImg}`}
                 rating= {item.stats.rating}
                 reviewCount={item.stats.reviewCount}
                 country= {item.location}
