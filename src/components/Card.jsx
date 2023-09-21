@@ -7,7 +7,7 @@ export default function Card({img, rating, reviewCount, title, price, country}) 
           className="card-image"
         />
       <div className="card-other-info">
-            <img id="star-image" src="\src\assets\star.png" alt="an png image of a star" />
+            <img id="star-image" src="\public\star.png" alt="an png image of a star" />
             <span id="the-rating">{rating}</span> 
             <span className="gray">({reviewCount})  •   </span>
             <span className="gray">{country}</span>

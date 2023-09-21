@@ -5,7 +5,7 @@ export default function Hero() {
         <section className="hero-top-half">
           <img 
             className="welcome-image"
-            src="\src\assets\Group 77.png"
+            src="\public\Group 77.png"
             alt="eight photos placed like a zig-zag grid with people doing random activities"
           />
         </section>
