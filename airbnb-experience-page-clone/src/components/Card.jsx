@@ -1,24 +1,19 @@
-export default function Card() {
+export default function Card({img, rating, reviewCount, title, price, country}) {
   return (
-    <div className="the-card">
-      <div className="the-card-img-div">
+    <div className="card">
         <img
-          src="\src\assets\katie-zaferes.png"
+          src= {img}
           alt="picture of a professional swimmer Katie Zaferes"
           className="card-image"
         />
-        <p id="card-lable-sold-out">SOLD OUT</p>
-      </div>
       <div className="card-other-info">
-        <p className="vertical-align-middle">
             <img id="star-image" src="\src\assets\star.png" alt="an png image of a star" />
-            <span id="the-rating">5.0</span> (6) •  USA
-        </p>
-        <p>Life lessons with Katie Zaferes</p>
-        <p>
-            <span id="gig-price">From $136</span> / person
-        </p>
+            <span id="the-rating">{rating}</span> 
+            <span className="gray">({reviewCount})  •   </span>
+            <span className="gray">{country}</span>
       </div>
+            <p className="card--title" >{title}</p>
+            <p id="gig-price"><span className="bold">From ${price}</span> / person</p>
     </div>
   );
 }

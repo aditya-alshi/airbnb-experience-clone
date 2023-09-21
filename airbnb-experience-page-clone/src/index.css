@@ -51,44 +51,58 @@ p {
   color: #222222;
 }
 
-.the-card{
-  width: 16%;
+.cards-list {
   display: flex;
-  flex-direction: column;
-  padding: 20px;
-  font-size: 12px;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
 }
 
-.the-card .card-image{
+.card{
+  width: 175px;
+  font-size: 12px;
+  flex: 0 0 auto;         /* ADD */
+  display: flex;          /* ADD */
+  flex-direction: column; /* ADD */
+}
+section {
+  padding: 20px;
+}
+
+.card-image{
   width: 100%;
   border-radius: 9px;
+  margin-bottom: 9px;
 }
 
-#the-rating,#gig-price{
+#the-rating{
   font-weight: bolder;
   margin-right: 6px;
 }
 
-.the-card-img-div{
-  position: relative;
+
+.gray {
+  color: #918E9B;
 }
 
-#card-lable-sold-out{
-  letter-spacing: 0.1em;
-  font-weight: bolder;
-  border-radius: 0.3em;
-  background-color: #FFFFFF;
-  padding: 2px;
-  position: absolute;
-  top: 8px;
-  left: 8px;
+.bold {
+  font-weight: bold;
+}
+.card--title {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card-other-info{
-  line-height: 2em;  
+  display: flex;
+  align-items: center;  
+
 }
 
 #star-image{
   height: 14px;
-  margin-right: 6px;
+}
+
+#gig-price{
+  margin-top: auto;
 }
