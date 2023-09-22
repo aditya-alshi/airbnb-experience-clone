@@ -5,12 +5,12 @@ export default function Card({item}) {
     <div className="card">
       {!openSpots && <div className="card--badge">SOLD OUT</div>}
         <img
-          src= {img}
+          src= {`./public/images/${img}`}
           alt="picture of a professional swimmer Katie Zaferes"
           className="card-image"
         />
       <div className="card-other-info">
-            <img id="star-image" src=".\public\star.png" alt="an png image of a star" />
+            <img id="star-image" src=".\public\images\star.png" alt="an png image of a star" />
             <span id="the-rating">{rating}</span> 
             <span className="gray">({reviewCount})  •   </span>
             <span className="gray">{country}</span>
