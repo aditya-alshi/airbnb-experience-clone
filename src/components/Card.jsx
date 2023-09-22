@@ -1,6 +1,9 @@
-export default function Card({img, rating, reviewCount, title, price, country}) {
+export default function Card({item}) {
+  // console.log(item.title);
+  const {coverImg : img, rating, reviewCount, title, price, country, openSpots} = item
   return (
     <div className="card">
+      {!openSpots && <div className="card--badge">SOLD OUT</div>}
         <img
           src= {img}
           alt="picture of a professional swimmer Katie Zaferes"
