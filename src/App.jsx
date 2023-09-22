@@ -1,6 +1,6 @@
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Card from './components/Card';
+import Navbar from './Navbar';
+import Hero from './Hero';
+import Card from './Card';
 
 import cardData from '../data';
 
