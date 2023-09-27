@@ -1,6 +1,7 @@
 export default function Card({item}) {
   // console.log(item.title);
-  const {coverImg : img, rating, reviewCount, title, price, country, openSpots} = item
+  const {coverImg : img, stats : {rating, reviewCount} , title, price, country, openSpots} = item
+  console.log(reviewCount)
   return (
     <div className="card">
       {!openSpots && <div className="card--badge">SOLD OUT</div>}
