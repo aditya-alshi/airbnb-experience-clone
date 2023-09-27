@@ -5,7 +5,7 @@ export default function Card({item}) {
     <div className="card">
       {!openSpots && <div className="card--badge">SOLD OUT</div>}
         <img
-          src= {`./public/images/${img}`}
+          src= {img}
           alt="picture of a professional swimmer Katie Zaferes"
           className="card-image"
         />
